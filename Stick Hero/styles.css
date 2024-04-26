@@ -1,0 +1,121 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  overflow: hidden; /* Add this line to prevent scrolling */
+  background-image: url('Images/7270362.webp'); /* Set the .webp file as the background image */
+  background-size: cover; /* Ensure the background image covers the entire body without stretching */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Ensure the background image does not repeat */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#PressStart {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: shake 6s infinite;
+  animation: shake 6s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  10% { transform: translate(-50%, -50%) rotate(-5deg); }
+  20% { transform: translate(-50%, -50%) rotate(5deg); }
+  30% { transform: translate(-50%, -50%) rotate(-4deg); }
+  40% { transform: translate(-50%, -50%) rotate(4deg); }
+  50% { transform: translate(-50%, -50%) rotate(-3deg); }
+  60% { transform: translate(-50%, -50%) rotate(3deg); }
+  70% { transform: translate(-50%, -50%) rotate(-2deg); }
+  80% { transform: translate(-50%, -50%) rotate(2deg); }
+  90% { transform: translate(-50%, -50%) rotate(-1deg); }
+  100% { transform: translate(-50%, -50%) rotate(1deg); }
+}
+
+@keyframes shake {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  10% { transform: translate(-50%, -50%) rotate(-5deg); }
+  20% { transform: translate(-50%, -50%) rotate(5deg); }
+  30% { transform: translate(-50%, -50%) rotate(-4deg); }
+  40% { transform: translate(-50%, -50%) rotate(4deg); }
+  50% { transform: translate(-50%, -50%) rotate(-3deg); }
+  60% { transform: translate(-50%, -50%) rotate(3deg); }
+  70% { transform: translate(-50%, -50%) rotate(-2deg); }
+  80% { transform: translate(-50%, -50%) rotate(2deg); }
+  90% { transform: translate(-50%, -50%) rotate(-1deg); }
+  100% { transform: translate(-50%, -50%) rotate(1deg); }
+}
+
+#PressStart img {
+  width: 600px; /* Adjust the width as per your requirement */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#startButton {
+  position: absolute;
+  top: 25%; /* Adjust this value to move the button higher */
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999; /* Ensure it's on top of other elements */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+#startButton img {
+  width: 150px; /* Adjust the width as per your requirement */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#soundButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999; /* Ensure it's on top of other elements */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+#soundButton img {
+  width: 30px;
+  height: 30px;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#restart {
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}

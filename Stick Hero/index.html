@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Your Game Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <audio id="background-music" autoplay loop>
+  <source src="Sounds/background-music.mp3" type="audio/mpeg">
+</audio>
+    <audio id="fallSound" src="Sounds/fallsound.mp3"></audio>
+    <audio id="reachSound" src="Sounds/reachsound.mp3"></audio>
+    <div id="PressStart">
+      <img src="Images/press-start.png" alt="Press Start">
+    </div>
+    <button id="soundButton"><img src="Images/sound-icon.png" alt="Sound icon"></button>
+    <button id="startButton" onclick="startGame()">
+      <img src="Images/start.png" alt="Start Button">
+    </button>
+    <canvas id="game"></canvas>
+      <button id="restart">RESTART</button>
+    <div id="score">0</div>
+  </body>
+</html>
+<script src="script.js"></script>
